@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Signika', sans-serif;
+}
+header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.main_container {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-areas: "con1 con2 con3";
+}
+.con1 {
+  background-color: #999999;
+  border: 3px solid black;
+  height: 250px;
+  width: 95%;
+  display: grid;
+  grid-area: con1;
+  grid-template-areas:
+    "none heding1"
+    "article1 article1";
+  margin-left: 2.5%;
+}
+.con2 {
+  background-color: #999999;
+  border: 3px solid black;
+  height: 250px;
+  width: 95%;
+  display: grid;
+  grid-area: con2;
+  grid-template-areas:
+    "none heding2"
+    "article2 article2";
+  margin-left: 2.5%;
+}
+.con3 {
+  background-color: #999999;
+  border: 3px solid black;
+  height: 250px;
+  width: 95%;
+  display: grid;
+  grid-area: con3;
+  grid-template-areas:
+    "none heding3"
+    "article3 article3";
+  margin-left: 2.5%;
+}
+.heding_1 {
+  background-color: #d59898;
+  height: 35px;
+  width: 120px;
+  text-align: center;
+  grid-area: heding1;
+  border: 3px solid black;
+}
+.heding_2 {
+  background-color: #c14543;
+  height: 35px;
+  width: 150px;
+  text-align: center;
+  grid-area: heding2;
+  border: 3px solid black;
+}
+.heding_3 {
+  background-color: #e5d198;
+  height: 35px;
+  width: 150px;
+  text-align: center;
+  grid-area: heding3;
+  border: 3px solid black;
+}
+.article_1 {
+  grid-area: article1;
+  overflow: hidden;
+  padding: 15px;
+}
+.article_2 {
+  grid-area: article2;
+  overflow: hidden;
+  padding: 15px;
+}
+.article_3 {
+  grid-area: article3;
+  overflow: hidden;
+  padding: 15px;
+}
+
+/****************mobile***************/
+
+@media screen and (max-width: 991px) {
+
+  .main_container {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-areas: 
+    "con1 con2 none"
+    "con3 con3 con3"
+    ; 
+  }
+
+  .con3{
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 97%;
+  }
+  
+}
+
+/****************mobile***************/
+
+@media screen and (max-width: 768px) {
+    
+    .main_container {
+        background-color: #ffffff;
+        display: grid;
+        grid-template-areas: 
+        "con1"
+        "con2"
+        "con3"
+        ; 
+      }
+    .con2{
+        margin-top: 10px;
+    }
+}
